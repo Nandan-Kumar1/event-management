@@ -4,16 +4,8 @@ import { clubData } from "./data/clubs";
 import { eventList } from "./data/events";
 import { newsData } from "./data/news";
 
-function Header() {
-  return (
-    <header className="header">
-      <div className="logo">
-        <img className="logoimg" src="./assets/NITJ_edited.jpg" alt="" />
-      </div>
-      <p className="eventgallary">Event Gallery</p>
-    </header>
-  );
-}
+import Header from "./components/Header";
+import IntroComponent from "./components/IntroComponent";
 
 function WebTop() {
   return (
@@ -176,7 +168,7 @@ function App() {
   return (
     <>
       <Header />
-      <WebTop />
+      <IntroComponent />
       <Clubs />
       <Events />
       <News />
