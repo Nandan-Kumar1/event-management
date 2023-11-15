@@ -7,20 +7,6 @@ import { newsData } from "./data/news";
 import Header from "./components/Header";
 import IntroComponent from "./components/IntroComponent";
 
-function WebTop() {
-  return (
-    <div class="webTop">
-      <div class="overlay">
-        <h1>Welcome to Our Website</h1>
-        <p>
-          Exploring Campus Pulse: Unveil the Diversity of Clubs and Events at
-          NIT Jalandhar
-        </p>
-      </div>
-    </div>
-  );
-}
-
 function ClubCard({ name, logo, description, website }) {
   return (
     <div className="ccard">
