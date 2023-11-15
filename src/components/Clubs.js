@@ -20,7 +20,7 @@ function Clubs() {
         ))}
       </div>
 
-      <p className="text-[#14a4d4] text-md my-9">
+      <p className="text-[#14a4d4] text-md my-9 text-center">
         Energized by the vibrant array of clubs at NIT Jalandhar? Keep your
         spirits high as we delve into the exciting events of this marvelous
         institution
