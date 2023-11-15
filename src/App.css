@@ -10,13 +10,7 @@
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
-a {
-  text-decoration: none;
-}
-a:visited {
-  text-decoration: none; /* Removes underlines from visited links */
-  color: black;
-}
+
 @media (max-width: 767px) {
   .logo {
     display: none;

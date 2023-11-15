@@ -2,7 +2,7 @@ import React from "react";
 
 function IntroComponent() {
   return (
-    <section className="flex justify-between items-center h-[80vh] mt-7">
+    <section className="flex justify-between items-center h-[80vh] mt-7 max-w-7xl  m-auto px-6">
       <div className="flex flex-col justify-end items-center">
         <h1 className="text-6xl font-bold mb-6 text-shadow">
           <span className="text-[#14a4d45b]">Explore</span> <br />

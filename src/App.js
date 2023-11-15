@@ -1,45 +1,11 @@
 import { useRef } from "react";
 import "./App.css";
-import { clubData } from "./data/clubs";
 import { eventList } from "./data/events";
 import { newsData } from "./data/news";
 
 import Header from "./components/Header";
 import IntroComponent from "./components/IntroComponent";
-
-function ClubCard({ name, logo, description, website }) {
-  return (
-    <div className="ccard">
-      <img src={logo} alt={name} />
-      <div className="cdesc">
-        <h2>{name}</h2>
-        <p>{description}</p>
-      </div>
-      <a href={website} target="_blank" rel="noreferrer">
-        <button className="card-button">Visit Website</button>
-      </a>
-    </div>
-  );
-}
-
-function Clubs() {
-  return (
-    <div className="clubs">
-      <h1 className="heading">Different Clubs Of NITJ</h1>
-      <div className="ccards">
-        {clubData.map((club, index) => (
-          <ClubCard
-            key={index}
-            name={club.name}
-            logo={club.logo}
-            description={club.description}
-            website={club.website}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
+import Clubs from "./components/Clubs";
 
 function EventCard({ image, title, description, readMoreLink }) {
   return (
