@@ -11,6 +11,7 @@ function Clubs() {
         {clubData.map((club, index) => (
           <ClubCard
             key={index}
+            id={club.id}
             name={club.name}
             logo={club.logo}
             description={club.description}

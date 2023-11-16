@@ -1,7 +1,7 @@
 // ClubCard.js
 import React from "react";
 
-const ClubCard = ({ name, logo, description, website, tags }) => {
+const ClubCard = ({ id, name, logo, description, website, tags }) => {
   return (
     <div className="bg-white flex flex-col justify-between shadow-lg rounded-lg overflow-hidden w-[250px] h-[390px] border border-gray-200 hover:shadow-2xl transition-all duration-300">
       <div>
@@ -12,8 +12,11 @@ const ClubCard = ({ name, logo, description, website, tags }) => {
         />
         <div className="p-4">
           <div className="mb-2">
-            {tags.map((tag) => (
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+            {tags.map((tag, i) => (
+              <span
+                key={i}
+                className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+              >
                 {tag}
               </span>
             ))}
@@ -36,7 +39,7 @@ const ClubCard = ({ name, logo, description, website, tags }) => {
           Visit Website
         </a>
         <a
-          href="/club/id"
+          href={`/club/${id}`}
           className="bg-gray-300 py-1 px-2 rounded-lg text-black"
         >
           Get Details

@@ -1,21 +1,20 @@
 import "./App.css";
-import { newsData } from "./data/news";
 
-import Header from "./components/Header";
-import IntroComponent from "./components/IntroComponent";
-import Clubs from "./components/Clubs";
-import Events from "./components/Events";
-import Footer from "./components/Footer";
+import { BrowserRouter, Route, Router, Routes } from "react-router-dom";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import ClubPage from "./pages/ClubPage";
 
 function App() {
   return (
-    <>
-      <Header />
-      <IntroComponent />
-      <Clubs />
-      <Events />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/club/:id" element={<ClubPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
